@@ -9,7 +9,7 @@ export default function Sticker() {
             href="tel:+33698144222" 
             className="inline-block bg-brand-green-500 px-8 py-4 rounded-full font-bold text-white text-lg hover:bg-brand-green-600 transition"
           >
-            Appeler le 06 98 14 42 22
+            06 98 14 42 22
           </a>
     </div>
   )
