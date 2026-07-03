@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +22,15 @@ export default function Header() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="relative flex items-center justify-center w-10 h-10 bg-brand-green-600 rounded-lg shadow-lg">
-            <svg viewBox="0 0 24 24" fill="white" className="w-6 h-6"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z" /></svg>
+          <div className="relative flex items-center justify-center w-20 h-20 rounded-lg ">
+            {/* <svg viewBox="0 0 24 24" fill="white" className="w-6 h-6"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z" /></svg> */}
+            <Image 
+      src="/logo.png"
+      alt="Logo Nuisibles Nantes"
+      width={70}
+      height={70}
+      className="object-contain"
+    />
           </div>
           <div className="flex flex-col">
             <span className="text-xl font-black text-zinc-900 leading-tight">NUISIBLES</span>
